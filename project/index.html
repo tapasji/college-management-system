@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>student management system</title>
+
+</head>
+
+<body>
+    <header>
+        <h1>R.E.C. Student's Management System</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Features</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+
+        <div class="dropdown">
+            <button class="dropbtn">Login</button>
+            <div class="dropdown-content">
+                <a href="login.html">Admin Login</a>
+                <a href="login.html">Teacher Login</a>
+                <a href="login.html">Student Login</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">Signup</button>
+            <div class="dropdown-content">
+                <a href="signup.html">Admin</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Content Goes Here -->
+    <div class="slideshow-container">
+        <div class="mySlides">
+            <img src="image1.jpg" alt="Slide 1" width="1580" height="700">
+        </div>
+
+        <div class="mySlides">
+            <img src="image2.jpg" alt="Slide 2" width="1580" height="700">
+        </div>
+
+        <div class="slideshow-container">
+            <!-- ... existing slideshow ... -->
+        </div>
+
+        <section class="features-container">
+            <div class="feature-box">
+                <h2>Student Profiles</h2>
+                <p>View and manage student profiles.</p>
+                <!-- Add more content or functionality as needed -->
+            </div>
+
+            <div class="feature-box">
+                <h2>Attendance System</h2>
+                <p>Track and manage student attendance.</p>
+                <!-- Add more content or functionality as needed -->
+            </div>
+
+            <div class="feature-box">
+                <h2>Announcements</h2>
+                <p>Stay updated with important announcements.</p>
+                <!-- Add more content or functionality as needed -->
+            </div>
+
+            <div class="feature-box">
+                <h2>Student Leave Management</h2>
+                <p>Manage student leave requests and approvals.</p>
+                <!-- Add more content or functionality as needed -->
+            </div>
+        </section>
+
+
+        <!-- Add more slides as needed -->
+
+        <script>
+            let slideIndex = 0;
+
+            function showSlides() {
+                let i;
+                const slides = document.getElementsByClassName("mySlides");
+
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+
+                slideIndex++;
+
+                if (slideIndex > slides.length) {
+                    slideIndex = 1;
+                }
+
+                slides[slideIndex - 1].style.display = "block";
+                setTimeout(showSlides, 5000); // Change image every 5 seconds
+            }
+
+            document.addEventListener("DOMContentLoaded", function() {
+                showSlides();
+            });
+        </script>
+    </div>
+
+
+    <!-- Content Goes Here -->
+
+</body>
+
+</html>
